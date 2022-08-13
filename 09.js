@@ -12,8 +12,17 @@ function repetirCaracteres() {
   // 'hola'.repeatCharacters() devuelve "hhoollaa"
 
   // Tu código aca:
-
+  String.prototype.repeatCharacters = function () {
+    let texto = this;
+    let nuevoTexto = '';
+    for (var i = 0; i < texto.length; i++) {
+      let letra = texto[i];
+      nuevoTexto = nuevoTexto + letra.charAt().repeat(2);
+    }
+    return nuevoTexto
+  }
 }
+
 
 // No modifiques nada debajo de esta linea //
 

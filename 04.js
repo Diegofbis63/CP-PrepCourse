@@ -12,7 +12,12 @@ function actividadesEnComun(persona1, persona2) {
   // actividadesEnComun(persona1, persona2) => ['comer', 'dormir']
   // Tip: podes usar ciclos for anidados.
   // Tu código aca:
-
+  var nuevoArray = []
+  for (var i = 0; i < persona1.length; i++) {
+    for (var j = 0; j < persona2.length; j++)
+    if (persona1[i] = persona2[j])
+    nuevoArray.push(persona1[i]);
+  } return nuevoArray;
 }
 
 // No modifiques nada debajo de esta linea //

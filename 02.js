@@ -9,7 +9,7 @@ function cuantosOnline(usuarios) {
   // cada usuario tiene una property 'online' que es un booleano.
   // deberia devolver la cantidad de usuarios con la property online igual a true.
   // Por ej:
-  // let usuarios = {
+  //  let usuarios = {
   //     toni: {
   //         edad: 33,
   //         online: true
@@ -31,7 +31,12 @@ function cuantosOnline(usuarios) {
   // Tip: Podes usar el metodo for...in
 
   // Tu código aca:
-
+  let contador = 0;
+  for (let nombre in usuarios) {
+    const usuario = usuarios[nombre];
+    if (usuario.online) { contador++ }
+  }
+  return contador;
 }
 
 
