@@ -31,15 +31,17 @@ function cuantosOnline(usuarios) {
   // Tip: Podes usar el metodo for...in
 
   // Tu código aca:
-  let contador = 0;
-  for (let nombre in usuarios) {
-    const usuario = usuarios[nombre];
-    if (usuario.online) { contador++ }
+    var contador = 0;
+    for (var user in usuarios){
+      if(usuarios[user].online === true){
+        contador++;
+
+      }
+    }
+    return contador;
   }
-  return contador;
-}
 
-
+  
 // No modifiques nada debajo de esta linea //
 
 module.exports = cuantosOnline
